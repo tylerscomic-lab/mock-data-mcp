@@ -1,0 +1,12 @@
+version: 1
+name: mock-data-mcp
+description: Generate realistic fake test data — users, companies, products, blog posts, and full relational datasets. Powered by Faker.js. No API key needed.
+runtime: typescript
+entry: server.js
+build:
+  install: npm install
+startCommand:
+  type: http
+  command: node server.js
+  port: 8080
+  healthCheck: /health
