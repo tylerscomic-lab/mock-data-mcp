@@ -10,3 +10,4 @@ startCommand:
   command: node server.js
   port: 8080
   healthCheck: /health
+  mcpPath: /mcp
